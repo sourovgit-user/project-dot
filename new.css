@@ -248,7 +248,7 @@ outline-style: none;
     left: 0;
     right: 0;
     bottom: 0;
-   background-image:url(image/Screenshot-2020-04-16-at-1-07-06-PM.png);
+   background-image:url(image/Screenshot-2020-04-16-at-1-07-19-PM.png);
    background-position: center;
    background-size: cover;
     -webkit-transition: .4s;
@@ -271,7 +271,7 @@ outline-style: none;
   }
   
   input:checked + .slider {
-       background-image: url(image/Screenshot-2020-04-16-at-1-07-19-PM.png);
+       background-image: url(image/Screenshot-2020-04-16-at-1-07-06-PM.png);
 
   }
   
