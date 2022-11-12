@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.navigation{
+    margin-left: 0%; 
+    height: 10vh;
+    min-width: 700px;
+    top: 0px;
+    width: 100%;
+    background: rgb(53, 65, 90);
+    /* border: 1px solid #dbdbdb; */
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    box-shadow: 0px 0px 12px #141414;
+    z-index: 1;
+
+}
+*:focus{
+outline-style: none; 
+
+}
+
+
+/*               toggle button         */
+
+
+
+.toggle-button{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 20px;
+    cursor: pointer;  
+    /* background: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.9s, box-shadow 0.5s ease-in-out ;
+}
+
+.toggle-button:hover{
+    box-shadow: 0px 0px 20px rgb(133, 153, 196) ;
+}
+.toggle-button  .toggle{
+    position: absolute;
+    height: 2px;
+    min-height: 2px;
+    width: 50%;
+    background: #979797;
+    top: 50%;
+    transition:0.3s all ease-in-out;
+   
+
+}
+.toggle:nth-child(1){
+    top: 30%;
+    
+   
+}
+.toggle:nth-child(3){
+    top: 70%;
+}
+
+/*          animation        */
+   
+.toggle-button:hover
+.toggle:nth-child(1){
+    width:12px ;
+    rotate: -45deg;
+    left: 13px;
+    top: 40%;
+    background: white;
+}
+.toggle-button:hover
+.toggle:nth-child(2){
+    width: 53%;
+    height: 1px;
+    top: 50.8%;
+    transform: translateX(30px);
+    opacity: 0;
+    background: white;
+}
+.toggle-button:hover
+.toggle:nth-child(3){
+    width:12px ;
+    rotate: 48deg;
+    left: 13px;
+    top: 59%;
+    background: white;
+}
+
+
+/*                 logo               */
+
+#logo{
+    display: flex;
+    height: 30px;
+    width: auto;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*              search button           */
+
+
+.search-box{
+    position: relative;
+    height: 30px;
+    width: 30%;
+    max-width: 500px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    /* box-shadow:2px 2px 8px #979797 ; */
+    border-radius: 4px;
+    transition: box-shadow 0.2s;
+    border: 1px solid #757575;
+  
+}
+.search-box:hover{
+    box-shadow: 0px 0px 20px rgb(133, 153, 196) ;
+
+    /* border: 2px solid ; */
+    border-color: #fff;
+}
+
+
+
+#search{
+    font-family: cursive;
+    color: rgb(175, 174, 174);
+    position: relative;
+    border-radius: 4px 0px 0px 4px;
+    height: 100%;
+    width: 90%;
+    text-transform: capitalize;
+    border:none;
+    border-right: none;
+    background: #35415a;
+    text-align: start;
+    
+   
+}
+
+#search-btn{
+    height: 100%;
+    width: 10%;
+    cursor: pointer;
+    border:none;
+    border-left: none;
+    background: #35415a;
+    min-width: 27px; 
+    border-radius:0px 4px 4px 0px ;
+    transition: background 0.2s;
+}
+#search-btn:hover{
+
+    background: #7c7b7b;
+  
+}
+
+
+#search-btn  img{
+    padding: 5px 0;  
+    height: 100%; 
+}
+
+
+
+/*                   log in button                */
+
+
+
+
+
+.login-btn{
+    height: 27px;
+    width: 50px;
+    display: flex;
+    border: 1px solid  #757575;
+    margin-left: auto;
+    border-radius: 34px;
+    /* box-shadow:2px 2px 8px #979797 ; */
+    justify-content: center;
+    margin-right: 10px;
+    background: #35415a;
+    transition:all 0.5s;
+
+}
+.login-btn:hover{
+    /* background-color:rgb(116, 186, 235) ; */
+    border-color:rgb(116, 186, 235) ;
+    box-shadow: 0px 0px 20px rgb(133, 153, 196) ;
+
+}
+.login{
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(205deg 46% 92%);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: bold;
+    word-spacing: 0.1rem;
+    color: rgb(0, 0, 2);
+    padding: auto;
+    background:none;
+    transition: color 0.2s;
+}
+.login:hover{
+    color: #ffff;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+   margin-right: 10px;
+   border-radius: 34px;
+   transition: all .50s;
+  }
+  .switch:hover{
+    box-shadow: 0px 0px 20px rgb(133, 153, 196) ;
+  }
+  
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-image:url(/image/Screenshot-2020-04-16-at-1-07-06-PM.png);
+   background-position: center;
+   background-size: cover;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 5px;
+   
+    background-color: rgb(119, 146, 204);
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  }
+  
+  input:checked + .slider {
+       background-image: url(/image/Screenshot-2020-04-16-at-1-07-19-PM.png);
+
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+.main{
+   position: relative;
+   /* z-index: -1; */
+    top: 10vh;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+  /*         active  toggle button            */
+
+
+.Activetggle{
+    position: absolute;
+    /* display: none; */
+    height: 90%;
+    width: 20%;
+    min-width:170px ;
+    max-width:230px ;
+    margin: 0px;
+    padding: 0px;
+    background:rgba(255, 254, 254, 0.223);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 20px rgb(103, 103, 103);
+    cursor: pointer;
+}
+.topSection{
+    height: 15%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.topSection button{
+    position: relative;
+    height: 30px;
+    width: 80%;
+    top: 10px;
+    margin: 2px auto;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 0.2rem;
+    outline: none;
+    background:url(/image/VID_20220913_092141.mp4) mute loop;
+    border: none;
+    color: rgb(5, 5, 5);
+    transition: all 0.5s ease-in-out;
+    box-shadow:
+    0px 0px 31.4px rgba(0, 0, 0, 0.284),
+    0px 0px 105.4px rgba(0, 0, 0, 0.416),
+    0px 0px 472px rgba(0, 0, 0, 0.56) ;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.btn::after{
+    content: '';
+    height: 2px;
+    width: 120%;
+    background: #033aff;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: scale(0, 1);
+    transition:  transform 0.4s ease;
+}
+.btn:hover::after{
+    transform: scale(1, 1);
+}
+.btn:hover{
+    background: #979696;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+
+
+}
+.divider{
+    position: absolute;
+   bottom: -16px;
+    height: 1px;
+    width: 90%;
+    background: #a09f9f;
+    margin: auto 5%;
+}
+/* ********* all icon lists styles are here ********* */
+.list-container{
+    display: flex;
+    height:83%;
+    width: 100%;
+    position: absolute;
+ 
+ ;
+    margin:5px 0px 0px 0px;
+   
+} 
+.lists{
+    list-style: none; 
+}
+
+.lists li a {
+    text-decoration: none;
+    color: rgb(20, 110, 190);
+    
+   
+    
+}
+.lists li a i{
+    margin: 25px 10px 25px ;
+    color: #141414;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
